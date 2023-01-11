@@ -1,42 +1,85 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+img-target-card{
+  transform: scale(1,5) rotate(1turn);
+}
+
 body{
-  margin: 5px;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: whitesmoke;
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-main{  
-  border: 1px dashed green;
   max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  font-family: 'Sniglet', cursive;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10px;
+  align-items: center;
+}
+h1{
+  letter-spacing: 0.1em;
 }
 
-.aboutMe{
-  border: 1px dashed blue;
-  
-}
-
-nav ul{
-  width: auto;
-  position:fixed;
-  right: 10px;
-  text-align: center;
-  border: 1px dashed red;
-}
 nav ul li{
-  list-style: none;  
-  display: inline-flex;  
+  display: inline-block;
+  margin-left: 10px;
 }
-nav a{
+
+nav ul li a{
   text-decoration: none;
   color: black;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
-img{
+nav ul li a:hover{
+  text-decoration: none;
+  color:brown;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+#aboutMe img{
   max-width: 250px;
   height: auto;
+  overflow: hidden;
   border-radius: 15px;
-  border: 1px dashed red;
   float: right;
+  opacity: 0.85;
 }
+
+#aboutMe img:hover{
+  max-width: 250px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  float: right;
+  opacity: 0.85;
+  rotate: 0.02turn;
+  transition: ;
+}
+
+
+@media  only screen and (max-width:480px){
+  body{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  #aboutMe img{
+    max-width: 150px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    float: right;
+    opacity: 0.85;
+  }
+}
+
+
+
