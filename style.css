@@ -11,6 +11,7 @@ body{
   margin: 40px auto;
   font-size: 16px;
   font-family: 'Sniglet', cursive;
+  display: block;
 }
 header{
   display: flex;
@@ -40,6 +41,12 @@ nav ul li a:hover{
   color:brown;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
+}
+
+.nav nav{
+  display: flex;
+  align-items: center;
+  border: 0.5px dashed black;
 }
 
 #aboutMe img{
@@ -97,7 +104,7 @@ nav ul li a:hover{
 }
 
 .project{
-  width: 600px;
+  min-width: 600px;
   min-height: 300px;
   display: none;
 }
